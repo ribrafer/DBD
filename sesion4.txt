@@ -1,0 +1,4 @@
+1)select count() from lector where not poblacion='SALAMANCA';
+2)select count(distinct poblacion) from lector;
+3)select max(to_char(sysdate,'yyyy')-to_char(fecha_nac, 'yyyy')), min(to_char(sysdate,'yyyy')-to_char(fecha_nac, 'yyyy')), avg(to_char(sysdate,'yyyy')-to_char(fecha_nac, 'yyyy')) from lector;
+12)select cod_suc, count(*) from prestamo where to_char(fecha_ini, 'yyyy')=2007 group by cod_suc;
